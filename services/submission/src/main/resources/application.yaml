@@ -34,10 +34,6 @@ services:
       batch-size: 5
 
 spring:
-  jpa:
-    hibernate:
-      ddl-auto: validate
-    open-in-view: false
   flyway:
     enabled: true
     locations: classpath:/db/migration, classpath:/db/specific/{vendor}
